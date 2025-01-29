@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- 
+        Sets character encoding to UTF-8 for universal character support.
+        Ensures the webpage is scaled correctly on all devices via the viewport meta tag.
+        "noodp" is a directive telling search engines not to use Open Directory Project data for page titles/descriptions.
+      -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <meta name="robots" content="noodp" />
+
+    <!-- SEO Keywords -->
+    <meta
+      name="keywords"
+      content="Sakana, reserva restaurante, restaurante Sakana, sushi Madrid, reservar mesa, descuento reserva, Sakana Madrid reserva"
+    />
+
+    <!-- SEO Description -->
+    <meta
+      name="description"
+      content="Reserva tu mesa en Sakana Restaurante en Madrid. Haz tu reserva online y obtén un descuento del 30%. Descubre la mejor cocina japonesa."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="uploadfile/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="uploadfile/logo.png" type="image/x-icon" />
+
+    <!-- 
+        Google Fonts preconnect to load fonts efficiently.
+        "Lora" and "Poppins" are used here.
+      -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+        Bootstrap CSS for responsive design.
+        Make sure "bootstrap.min.css" is available in the "css/bootstrap/css/" folder.
+      -->
+    <link
+      rel="stylesheet"
+      id="dina-bootstrap-css-css"
+      href="css/bootstrap/css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!-- 
+        Font Awesome icons for social icons and other iconography.
+      -->
+    <link
+      rel="stylesheet"
+      id="dina-font-awesome-css"
+      href="css/fontawesome/css/font-awesome.min.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!-- 
+        Main CSS file containing custom styling.
+      -->
+    <link
+      rel="stylesheet"
+      id="dina-style-css-css"
+      href="style.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+
+  <!-- 
+    The body has a class "body-header1" which may apply specific styling from style.css.
+  -->
+  <body class="body-header1">
+    <!-- 
+      MOBILE MENU
+      This is a mask overlay containing the mobile navigation menu.
+    -->
+    <div class="mask-nav-2">
+      <!-- MENU -->
+      <nav class="navbar navbar-2 nav-mobile">
+        <div class="nav-holder nav-holder-2">
+          <ul id="menu-menu-2" class="menu-nav-2">
+            <li class="menu-item"><a href="index.html">Inicio</a></li>
+            <li class="menu-item"><a href="carta.html">Carta</a></li>
+            <li class="menu-item"><a href="reservation.html">Reserva</a></li>
+            <li class="menu-item"><a href="gallery.html">Galería</a></li>
+            <li class="menu-item"><a href="contact.html">Contacto</a></li>
+            <li>
+              <a
+                class="social-instagram"
+                href="https://www.instagram.com/sakanamadrid/?hl=es"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /MENU -->
+
+      <!-- RIGHT SIDE (Contact Info) -->
+      <div class="rightside-nav-2">
+        <h3>Reserva</h3>
+        <ul class="right-side-contact">
+          <li>
+            <label>Dirección:</label>
+            Calle de Gaztambide, 11, 28015, Madrid
+          </li>
+          <li>
+            <label>Número de teléfono:</label>
+            917 138 630
+          </li>
+          <li>
+            <label>Correo electrónico:</label>
+            sakanarestaurante1@gmail.com
+          </li>
+        </ul>
+      </div>
+      <!-- /RIGHT SIDE -->
+    </div>
+    <!-- /MOBILE MENU -->
+
+    <!-- HEADER -->
+    <header id="header-1">
+      <div class="headerWrap-1">
+        <nav class="navbar-1">
+          <!-- TOP LEFT PAGE TEXT (Location) -->
+          <div class="top-location">
+            <span class="info-txt">Calle de Gaztambide, 11, </span>
+            <span class="info-txt">28015, Madrid</span>
+          </div>
+
+          <!-- TOP RIGHT PAGE TEXT (Reservation Info) -->
+          <div class="book-now">
+            <span class="info-txt">Reserva</span>
+            <span class="info-txt">917 138 630</span>
+          </div>
+
+          <!-- MOBILE BUTTON NAV (Menu Toggle) -->
+          <div class="nav-button-holder nav-btn-mobile inactive">
+            <span class="menu-txt">MENÚ</span>
+            <button type="button" class="nav-button">
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- NAVIGATION CONTENT -->
+          <div class="nav-content-1">
+            <!-- LOGO -->
+            <div class="logo-1">
+              <a href="index.html"
+                ><img class="img-fluid" src="uploadfile/logo.png" alt=""
+              /></a>
+            </div>
+
+            <!-- MENU (Desktop) -->
+            <div class="nav-holder nav-holder-1 nav-holder-desktop">
+              <ul id="menu-menu-1" class="menu-nav menu-nav-1">
+                <li class="menu-item"><a href="index.html">Inicio</a></li>
+                <li class="menu-item">
+                  <a href="carta.html">Carta</a>
+                </li>
+                <li class="menu-item">
+                  <a href="reservation.html">Reserva</a>
+                </li>
+                <li class="menu-item"><a href="gallery.html">Galería</a></li>
+                <li class="menu-item"><a href="contact.html">Contacto</a></li>
+                <li>
+                  <a
+                    class="social-instagram"
+                    href="https://www.instagram.com/sakanamadrid/?hl=es"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /MENU -->
+          </div>
+        </nav>
+      </div>
+      <!-- /headerWrap -->
+    </header>
+    <!-- /HEADER -->
+
+    <!-- TOP IMAGE HEADER -->
+    <section class="topSingleBkg topPageBkg">
+      <div class="item-content-bkg">
+        <div
+          class="item-img"
+          style="background-image: url('Foto/IMG_5033.webp')"
+        ></div>
+        <div class="inner-desc">
+          <h1 class="post-title single-post-title">Reserva</h1>
+          <span class="post-subtitle">
+            Puede hacer una reserva online o llamándo al 917 138 630
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- /TOP IMAGE HEADER -->
+
+    <!-- MAIN WRAP CONTENT -->
+    <section id="wrap-content" class="page-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="page-holder custom-page-template">
+              <!-- Title and short description for reservation -->
+              <div class="categ-name">
+                <h2>Haz una reserva</h2>
+              </div>
+              <p class="alignc">
+                Reserva desde nuestra página web y obtén un decuento del -30%.
+                Bebidas, menús y barcas no incluidos.
+              </p>
+            </div>
+
+            <!-- Reservation iFrame from CoverManager -->
+            <script
+              type="text/javascript"
+              src="https://www.covermanager.com/js/iframeResizer.min.js"
+            ></script>
+            <iframe
+              id="restaurante-sakana"
+              title="Reservas"
+              src="https://www.covermanager.com/reservation/module_restaurant/restaurante-sakana/spanish"
+              frameborder="0"
+              height="550"
+              width="100%"
+              onload="iFrameResize();"
+            ></iframe>
+          </div>
+          <!-- /col-md-10 -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </section>
+    <!-- /MAIN WRAP CONTENT -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <!-- FOOTER ROW -->
+        <div class="row alignc">
+          <!-- FOOTER COLUMN 1 (Address) -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <h5>DIRECCIÓN:</h5>
+              <p>
+                Sakana Restaurante <br />
+                Calle de Gaztambide, 11, 28015, Madrid
+              </p>
+            </div>
+          </div>
+
+          <!-- FOOTER COLUMN 2 (Reservation Info) -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <h5>RESERVA:</h5>
+              <p>
+                917 13 86 30 <br />
+                sakanarestaurante1@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <!-- FOOTER COLUMN 3 (Opening Hours) -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <h5>HORARIO DE APERTURA:</h5>
+              <p>
+                Martes - Domingo <br />
+                13:00 - 16:30 <br />
+                20:00 - 00:30
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /FOOTER ROW -->
+
+        <!-- FOOTER SOCIAL (Instagram) -->
+        <ul class="footer-social">
+          <li>
+            <a
+              class="social-instagram"
+              href="https://www.instagram.com/sakanamadrid/?hl=es"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- /FOOTER SOCIAL -->
+
+        <!-- FOOTER COPYRIGHT -->
+        <div class="copyright">Copyright &copy; 2022, Sakana.</div>
+        <!-- /FOOTER COPYRIGHT -->
+
+        <!-- FOOTER SCROLL UP (Scroll-to-top button) -->
+        <div class="scrollup">
+          <a class="scrolltop" href="#">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+        <!-- /FOOTER SCROLL UP -->
+      </div>
+      <!-- /container -->
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- JS FILES -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="css/bootstrap/js/popper.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- MAIN JS (Initialization and custom scripts) -->
+    <script src="js/init.js"></script>
+  </body>
+</html>

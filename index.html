@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- 
+		  Sets character encoding to UTF-8 for universal character support.
+		  Ensures the webpage is scaled correctly on all devices via the viewport meta tag.
+		  "noodp" is a directive telling search engines not to use Open Directory Project data for page titles/descriptions.
+		-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <meta name="robots" content="noodp" />
+
+    <!-- SEO Keywords -->
+    <meta
+      name="keywords"
+      content="Sakana, Restaurante Sakana, comida japonesa, sushi Madrid, restaurante Madrid, reserva restaurante, cocina japonesa"
+    />
+
+    <!-- SEO Description -->
+    <meta
+      name="description"
+      content="Sakana Restaurante en Madrid ofrece auténtica cocina japonesa con opciones para veganos, vegetarianos y carnívoros. Reserve su mesa y disfrute del mejor sushi."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="uploadfile/logo.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="uploadfile/logo.ico" type="image/x-icon" />
+
+    <!-- 
+		  Google Fonts preconnect to load fonts efficiently.
+		  "Lora" and "Poppins" are used here.
+		-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+		  Bootstrap CSS for responsive design.
+		  Make sure "bootstrap.min.css" is available in the "css/bootstrap/css/" folder.
+		-->
+    <link
+      rel="stylesheet"
+      id="dina-bootstrap-css-css"
+      href="css/bootstrap/css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!-- 
+		  Font Awesome icons for social icons and other iconography.
+		-->
+    <link
+      rel="stylesheet"
+      id="dina-font-awesome-css"
+      href="css/fontawesome/css/font-awesome.min.css"
+      type="text/css"
+      media="all"
+    />
+
+    <!-- 
+		  Main CSS file containing custom styling.
+		-->
+    <link
+      rel="stylesheet"
+      id="dina-style-css-css"
+      href="style.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+
+  <!-- 
+    The body has a class "body-header1" which may apply specific styling from style.css 
+  -->
+  <body class="body-header1">
+    <!-- 
+      Loader wrapper that displays a loading animation until the page is fully loaded.
+    -->
+    <div class="loader-wrapper">
+      <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <!-- 
+      MOBILE MENU
+      This is a mask overlay containing the mobile navigation menu.
+    -->
+    <div class="mask-nav-2">
+      <!-- MENU -->
+      <nav class="navbar navbar-2 nav-mobile">
+        <div class="nav-holder nav-holder-2">
+          <ul id="menu-menu-2" class="menu-nav-2">
+            <li class="menu-item"><a href="index.html">Inicio </a></li>
+            <li class="menu-item"><a href="carta.html">Carta</a></li>
+            <li class="menu-item"><a href="reservation.html">Reserva</a></li>
+            <li class="menu-item"><a href="gallery.html">Galería</a></li>
+            <li class="menu-item"><a href="contact.html">Contacto</a></li>
+            <li>
+              <a
+                class="social-instagram"
+                href="https://www.instagram.com/sakanamadrid/?hl=es"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /MENU -->
+
+      <!-- RIGHT SIDE (Contact Info) -->
+      <div class="rightside-nav-2">
+        <h3>Reserva</h3>
+        <ul class="right-side-contact">
+          <li>
+            <label>Dirección:</label>
+            Calle de Gaztambide, 11, 28015, Madrid
+          </li>
+          <li>
+            <label>Número de teléfono:</label>
+            917 138 630
+          </li>
+          <li>
+            <label>Correo electrónico:</label>
+            sakanarestaurante1@gmail.com
+          </li>
+        </ul>
+      </div>
+      <!-- /RIGHT SIDE -->
+    </div>
+    <!-- /MOBILE MENU -->
+
+    <!-- HEADER -->
+    <header id="header-1">
+      <div class="headerWrap-1">
+        <nav class="navbar-1">
+          <!-- TOP LEFT PAGE TEXT (Location) -->
+          <div class="top-location">
+            <span class="info-txt">Calle de Gaztambide, 11, </span>
+            <span class="info-txt">28015, Madrid</span>
+          </div>
+
+          <!-- TOP RIGHT PAGE TEXT (Reservation) -->
+          <div class="book-now">
+            <span class="info-txt">Reserva</span>
+            <span class="info-txt">917 138 630</span>
+          </div>
+
+          <!-- MOBILE BUTTON NAV (Menu Toggle) -->
+          <div class="nav-button-holder nav-btn-mobile inactive">
+            <span class="menu-txt">MENÚ</span>
+            <button type="button" class="nav-button">
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- NAVIGATION CONTENT -->
+          <div class="nav-content-1">
+            <!-- LOGO -->
+            <div class="logo-1">
+              <a href="index.html"
+                ><img class="img-fluid" src="uploadfile/logo.png" alt=""
+              /></a>
+            </div>
+
+            <!-- MENU (Desktop) -->
+            <div class="nav-holder nav-holder-1 nav-holder-desktop">
+              <ul id="menu-menu-1" class="menu-nav menu-nav-1">
+                <li class="menu-item"><a href="index.html">Inicio</a></li>
+                <li class="menu-item">
+                  <a href="carta.html">Carta</a>
+                </li>
+                <li class="menu-item">
+                  <a href="reservation.html">Reserva</a>
+                </li>
+                <li class="menu-item"><a href="gallery.html">Galería</a></li>
+                <li class="menu-item"><a href="contact.html">Contacto</a></li>
+                <li>
+                  <a
+                    class="social-instagram"
+                    href="https://www.instagram.com/sakanamadrid/?hl=es"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /MENU -->
+          </div>
+        </nav>
+      </div>
+      <!-- /headerWrap -->
+    </header>
+    <!-- /HEADER -->
+
+    <!-- HOME SLIDER -->
+    <div class="slider-container">
+      <!-- 
+        Uses Owl Carousel plugin with images set as background images.
+      -->
+      <div class="owl-carousel owl-theme home-slider">
+        <!-- SLIDER ITEM 1 -->
+        <div class="slider-post slider-item-box-bkg">
+          <div
+            class="slider-img"
+            style="background-image: url('Foto/IMG_5033.webp')"
+          ></div>
+          <div class="slider-caption">
+            <div class="slider-text">
+              <h1>SAKANA</h1>
+              <p>
+                <a href="reservation.html" class="view-more more-white"
+                  >Reservar una mesa</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /SLIDER ITEM 1 -->
+
+        <!-- SLIDER ITEM 2 -->
+        <div class="slider-post slider-item-box-bkg">
+          <div
+            class="slider-img"
+            style="background-image: url('Foto/IMG_5050.webp')"
+          ></div>
+          <div class="slider-caption">
+            <div class="slider-text">
+              <h1>SAKANA</h1>
+              <p>
+                <a href="reservation.html" class="view-more more-white"
+                  >Reservar una mesa</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /SLIDER ITEM 2 -->
+
+        <!-- SLIDER ITEM 3 -->
+        <div class="slider-post slider-item-box-bkg">
+          <div
+            class="slider-img"
+            style="background-image: url('Foto/IMG_5049.webp')"
+          ></div>
+          <div class="slider-caption">
+            <div class="slider-text">
+              <h1>SAKANA</h1>
+              <p>
+                <a href="reservation.html" class="view-more more-white"
+                  >Reservar una mesa</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /SLIDER ITEM 3 -->
+      </div>
+    </div>
+    <!-- /HOME SLIDER -->
+
+    <!-- SECTION 1 -->
+    <section id="home-content-1" class="home-widget">
+      <div class="container">
+        <div class="row">
+          <!-- FEATURED ITEM 1 -->
+          <div class="col-md-4">
+            <div class="home-featured-item">
+              <div
+                class="home-featured-img"
+                style="background-image: url('Foto/IMG_5032.webp')"
+              ></div>
+              <a href="carta.html">
+                <div class="grid-overlay"></div>
+                <div class="featured-item-content">
+                  <h5>Carta</h5>
+                  <div class="featured-short-desc">Consulte nuestra carta</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /FEATURED ITEM 1 -->
+
+          <!-- FEATURED ITEM 2 -->
+          <div class="col-md-4">
+            <div class="home-featured-item">
+              <div
+                class="home-featured-img"
+                style="background-image: url('Foto/IMG_5033.webp')"
+              ></div>
+              <a href="reservation.html">
+                <div class="grid-overlay"></div>
+                <div class="featured-item-content">
+                  <h5>Reservar</h5>
+                  <div class="featured-short-desc">Reserve una mesa</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /FEATURED ITEM 2 -->
+
+          <!-- FEATURED ITEM 3 -->
+          <div class="col-md-4">
+            <div class="home-featured-item no-margin">
+              <div
+                class="home-featured-img"
+                style="background-image: url('Foto/IMG_5034.webp')"
+              ></div>
+              <a href="gallery.html">
+                <div class="grid-overlay"></div>
+                <div class="featured-item-content">
+                  <h5>Nuestro local</h5>
+                  <div class="featured-short-desc">Visite nuestra galería</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /FEATURED ITEM 3 -->
+        </div>
+      </div>
+    </section>
+    <!-- /SECTION 1 -->
+
+    <!-- SECTION 2 (About Us) -->
+    <section id="home-content-2" class="home-about-2">
+      <div class="row no-margin">
+        <!-- TEXT CONTENT -->
+        <div class="col-lg-8 col-md-6">
+          <div class="about-2-content">
+            <h2 class="home-subtitle"></h2>
+            <h1 class="home-title margin-b24 title-headline">Sobre nosotros</h1>
+            <div class="title-style-1">Sakana Restaurante</div>
+
+            <div class="row">
+              <div class="col-lg-8">
+                <p>
+                  En Sakana, nos especializamos en ofrecer auténtica gastronomía
+                  japonesa, destacando por la frescura de nuestros ingredientes
+                  y la dedicación de nuestros chefs. Desde sushi tradicional
+                  hasta platos calientes elaborados con técnicas clásicas,
+                  nuestra carta está diseñada para satisfacer a amantes del
+                  sushi. Sumérgete en nuestra carta, donde encontrarás una
+                  selección de sushi fresco, sashimi, makis, nigiris y
+                  especialidades de la cocina japonesa. Cada plato está
+                  cuidadosamente elaborado para ofrecerte una experiencia
+                  auténtica y deliciosa. Visítenos y descubra por qué somos una
+                  referencia en Madrid.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /TEXT CONTENT -->
+
+        <!-- IMAGE CONTENT -->
+        <div class="col-lg-4 col-md-6 no-padding">
+          <div class="home-featured-item-2">
+            <div
+              class="home-featured-img-2"
+              style="background-image: url('Foto/IMG_5054.webp')"
+            ></div>
+          </div>
+        </div>
+        <!-- /IMAGE CONTENT -->
+      </div>
+    </section>
+    <!-- /SECTION 2 -->
+
+    <!-- SECTION 4 (Parallax Reservation Info) -->
+    <!-- 
+      A parallax background effect is achieved by setting a fixed background image 
+      and different scrolling speed than the rest of the page.
+    -->
+    <section
+      class="home-widget parallax"
+      style="background-image: url('Foto/IMG_5030.webp')"
+    >
+      <div class="parallax-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 alignc">
+              <h2 class="home-subtitle">Reserva una mesa</h2>
+              <h1 class="home-title title-headline margin-b24">
+                Horario de apertura
+              </h1>
+              <p>
+                Martes - Domingo <br />
+                13:00 - 16:30 <br />
+                20:00 - 00:30
+              </p>
+              <a class="view-more more-white margin-t36" href="reservation.html"
+                >Reservar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /SECTION 4 -->
+
+    <!-- SECTION 5 (Sushi Experience) -->
+    <section id="home-wine" class="home-widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <!-- IMAGE -->
+              <div class="col-md-6">
+                <img class="img-fluid" src="Foto/IMG_5035.webp" alt="about-6" />
+              </div>
+              <!-- /IMAGE -->
+
+              <!-- TEXT -->
+              <div class="col-md-6 padding-tb54 alignr">
+                <h2 class="home-subtitle">Experience</h2>
+                <h1 class="home-title title-headline margin-b24">Sushi</h1>
+                <div class="title-style-1">Disfrute del mejor sushi</div>
+                <p>
+                  El sushi en Sakana es más que una comida, es un arte. Nuestros
+                  chefs combinan técnicas tradicionales con creatividad para
+                  ofrecerte una experiencia que deleitará tus sentidos. Ven a
+                  disfrutar del mejor sushi de Madrid.
+                </p>
+              </div>
+              <!-- /TEXT -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /SECTION 5 -->
+
+    <!-- SECTION 6 (Parallax Section with Recommendation Badge) -->
+    <section
+      class="home-widget parallax"
+      style="background-image: url('Foto/IMG_5056.webp')"
+    >
+      <div class="parallax-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- 
+                Recommendation widget from Restaurant Guru 
+              -->
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <link
+                  href="https://awards.infcdn.net/circle_v2.css"
+                  rel="stylesheet"
+                />
+                <div
+                  id="circle_v2"
+                  onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.sq_center').href);return 0;}"
+                  class=""
+                >
+                  <div class="arc-heading">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="160px"
+                      height="160px"
+                      viewBox="0 0 160 160"
+                    >
+                      <defs>
+                        <path
+                          id="heading-arc"
+                          d="M 30 80 a 50 50 0 1 1 100 0"
+                        ></path>
+                      </defs>
+                      <text
+                        class="arc-heading_heading"
+                        fill="#000"
+                        text-anchor="middle"
+                      >
+                        <textPath startOffset="50%" xlink:href="#heading-arc">
+                          Recomendado
+                        </textPath>
+                      </text>
+                    </svg>
+                  </div>
+                  <div class="sq_year">2023</div>
+                  <a href=" " class="sq_center f14" target="_blank"
+                    >Sakana Restaurante</a
+                  >
+                  <div class="arc-heading arc-headingbottom">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="120px"
+                      height="120px"
+                      viewBox="0 0 120 120"
+                    >
+                      <defs>
+                        <path
+                          id="subheading-arc"
+                          d="M 12 60 a 48 48 0 0 0 96 0"
+                        ></path>
+                      </defs>
+                      <text
+                        class="arc-heading_subheading"
+                        fill="#000"
+                        text-anchor="middle"
+                      >
+                        <textPath
+                          startOffset="50%"
+                          xlink:href="#subheading-arc"
+                        >
+                          <a href="https://restaurantguru.com" target="_blank">
+                            Restaurant Guru
+                          </a>
+                        </textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /col-md-12 -->
+          </div>
+          <!-- /row -->
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /parallax-content -->
+    </section>
+    <!-- /SECTION 6 -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <!-- ROW -->
+        <div class="row alignc">
+          <!-- FOOTER COLUMN 1 (Address) -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <h5>DIRECCIÓN:</h5>
+              <p>
+                Sakana Restaurante <br />
+                Calle de Gaztambide, 11, 28015, Madrid
+              </p>
+            </div>
+          </div>
+
+          <!-- FOOTER COLUMN 2 (Reservation Info) -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <h5>RESERVA:</h5>
+              <p>
+                917 13 86 30 <br />
+                sakanarestaurante1@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <!-- FOOTER COLUMN 3 (Opening Hours) -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <h5>HORARIO DE APERTURA:</h5>
+              <p>
+                Martes - Domingo <br />
+                13:00 - 16:30 <br />
+                20:00 - 00:30
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /ROW -->
+
+        <!-- FOOTER SOCIAL (Instagram) -->
+        <ul class="footer-social">
+          <li>
+            <a
+              class="social-instagram"
+              href="https://www.instagram.com/sakanamadrid/?hl=es"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- /FOOTER SOCIAL -->
+
+        <!-- FOOTER COPYRIGHT -->
+        <div class="copyright">Copyright &copy; 2022, Sakana.</div>
+        <!-- /FOOTER COPYRIGHT -->
+
+        <!-- FOOTER SCROLL UP -->
+        <div class="scrollup">
+          <a class="scrolltop" href="#">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+        <!-- /FOOTER SCROLL UP -->
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- POPUP -->
+    <!-- 
+      Modal for discount information.
+      "modal open" class is controlling the initial visibility in combination with CSS/JS.
+    -->
+    <a id="open-modal"></a>
+    <div id="modal" class="modal open">
+      <div class="modal-container">
+        <div class="modal-content">
+          <img class="imagen" src="uploadfile/guru2023.webp" />
+          <h2>-30% EN CARTA</h2>
+          <p1
+            >------------------------------------------------------------------</p1
+          >
+          <p>
+            RESERVA DESDE NUESTRA WEB Y OBTÉN UN DESCUENTO DEL -30%. BEBIDAS,
+            MENÚS Y BARCAS NO INCLUIDOS.
+          </p>
+        </div>
+        <span id="close-modal" class="close-modal">&times</span>
+      </div>
+    </div>
+
+    <!-- Popup Modal Scripts -->
+    <script>
+      const btnOpenModal = document.getElementById("open-modal");
+      const btnCloseModal = document.getElementById("close-modal");
+      const modalElm = document.getElementById("modal");
+
+      btnOpenModal.addEventListener("click", function () {
+        modalElm.classList.add("open");
+      });
+
+      btnCloseModal.addEventListener("click", function () {
+        modalElm.classList.remove("open");
+      });
+    </script>
+    <!-- /POPUP -->
+
+    <!-- LOADER -->
+    <!-- 
+      Script to hide the loader either after 3.5 seconds 
+      or once the page has fully loaded, whichever comes first.
+    -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loaderWrapper = document.querySelector(".loader-wrapper");
+
+        // Hide loader after 3.5 seconds, regardless of page load completion
+        const timeoutId = setTimeout(() => {
+          loaderWrapper.style.display = "none";
+        }, 3500);
+
+        // If the page loads before 3.5 seconds, hide it immediately
+        window.onload = function () {
+          clearTimeout(timeoutId);
+          loaderWrapper.style.display = "none";
+        };
+      });
+    </script>
+    <!-- /LOADER -->
+
+    <!-- JS (Include any JS libraries or frameworks below) -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="css/bootstrap/js/popper.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- MAIN JS (Initialization and custom scripts) -->
+    <script src="js/init.js"></script>
+  </body>
+</html>
