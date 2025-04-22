@@ -5,6 +5,8 @@
  *
  */
 
+// Template scripts
+
 (function ($) {
   "use strict";
 
@@ -150,3 +152,34 @@
     $("html, body").stop().animate({ scrollTop: 0 }, 1000, "easeOutExpo");
   });
 })(jQuery);
+
+// Custom scripts
+
+// Popup modal
+const btnOpenModal = document.getElementById("open-modal");
+const btnCloseModal = document.getElementById("close-modal");
+const modalElm = document.getElementById("modal");
+
+btnOpenModal.addEventListener("click", function () {
+  modalElm.classList.add("open");
+});
+
+btnCloseModal.addEventListener("click", function () {
+  modalElm.classList.remove("open");
+});
+
+// Loader script
+document.addEventListener("DOMContentLoaded", function () {
+  const loaderWrapper = document.querySelector(".loader-wrapper");
+
+  // Hide loader after 3.5 seconds, regardless of page load completion
+  const timeoutId = setTimeout(() => {
+    loaderWrapper.style.display = "none";
+  }, 3500);
+
+  // If the page loads before 3.5 seconds, hide it immediately
+  window.onload = function () {
+    clearTimeout(timeoutId);
+    loaderWrapper.style.display = "none";
+  };
+});

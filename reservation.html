@@ -1,47 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <!-- 
-        Sets character encoding to UTF-8 for universal character support.
-        Ensures the webpage is scaled correctly on all devices via the viewport meta tag.
-        "noodp" is a directive telling search engines not to use Open Directory Project data for page titles/descriptions.
-      -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reserva</title>
     <meta name="robots" content="noodp" />
-
-    <!-- SEO Keywords -->
     <meta
       name="keywords"
       content="Sakana, reserva restaurante, restaurante Sakana, sushi Madrid, reservar mesa, descuento reserva, Sakana Madrid reserva"
     />
-
-    <!-- SEO Description -->
     <meta
       name="description"
       content="Reserva tu mesa en Sakana Restaurante en Madrid. Haz tu reserva online y obtén un descuento del 30%. Descubre la mejor cocina japonesa."
     />
 
-    <!-- Favicon -->
     <link rel="icon" href="uploadfile/fav.png" type="image/x-icon" />
     <link rel="shortcut icon" href="uploadfile/fav.png" type="image/x-icon" />
-
-    <!-- 
-        Google Fonts preconnect to load fonts efficiently.
-        "Lora" and "Poppins" are used here.
-      -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- 
-        Bootstrap CSS for responsive design.
-        Make sure "bootstrap.min.css" is available in the "css/bootstrap/css/" folder.
-      -->
     <link
       rel="stylesheet"
       id="dina-bootstrap-css-css"
@@ -49,10 +29,6 @@
       type="text/css"
       media="all"
     />
-
-    <!-- 
-        Font Awesome icons for social icons and other iconography.
-      -->
     <link
       rel="stylesheet"
       id="dina-font-awesome-css"
@@ -60,10 +36,6 @@
       type="text/css"
       media="all"
     />
-
-    <!-- 
-        Main CSS file containing custom styling.
-      -->
     <link
       rel="stylesheet"
       id="dina-style-css-css"
@@ -73,16 +45,8 @@
     />
   </head>
 
-  <!-- 
-    The body has a class "body-header1" which may apply specific styling from style.css.
-  -->
   <body class="body-header1">
-    <!-- 
-      MOBILE MENU
-      This is a mask overlay containing the mobile navigation menu.
-    -->
     <div class="mask-nav-2">
-      <!-- MENU -->
       <nav class="navbar navbar-2 nav-mobile">
         <div class="nav-holder nav-holder-2">
           <ul id="menu-menu-2" class="menu-nav-2">
@@ -102,9 +66,7 @@
           </ul>
         </div>
       </nav>
-      <!-- /MENU -->
 
-      <!-- RIGHT SIDE (Contact Info) -->
       <div class="rightside-nav-2">
         <h3>Reserva</h3>
         <ul class="right-side-contact">
@@ -122,27 +84,21 @@
           </li>
         </ul>
       </div>
-      <!-- /RIGHT SIDE -->
     </div>
-    <!-- /MOBILE MENU -->
 
-    <!-- HEADER -->
     <header id="header-1">
       <div class="headerWrap-1">
         <nav class="navbar-1">
-          <!-- TOP LEFT PAGE TEXT (Location) -->
           <div class="top-location">
             <span class="info-txt">Calle de Gaztambide, 11, </span>
             <span class="info-txt">28015, Madrid</span>
           </div>
 
-          <!-- TOP RIGHT PAGE TEXT (Reservation Info) -->
           <div class="book-now">
             <span class="info-txt">Reserva</span>
             <span class="info-txt">917 138 630</span>
           </div>
 
-          <!-- MOBILE BUTTON NAV (Menu Toggle) -->
           <div class="nav-button-holder nav-btn-mobile inactive">
             <span class="menu-txt">MENÚ</span>
             <button type="button" class="nav-button">
@@ -150,16 +106,13 @@
             </button>
           </div>
 
-          <!-- NAVIGATION CONTENT -->
           <div class="nav-content-1">
-            <!-- LOGO -->
             <div class="logo-1">
               <a href="index.html"
                 ><img class="img-fluid" src="uploadfile/logo.png" alt=""
               /></a>
             </div>
 
-            <!-- MENU (Desktop) -->
             <div class="nav-holder nav-holder-1 nav-holder-desktop">
               <ul id="menu-menu-1" class="menu-nav menu-nav-1">
                 <li class="menu-item"><a href="index.html">Inicio</a></li>
@@ -181,15 +134,11 @@
                 </li>
               </ul>
             </div>
-            <!-- /MENU -->
           </div>
         </nav>
       </div>
-      <!-- /headerWrap -->
     </header>
-    <!-- /HEADER -->
 
-    <!-- TOP IMAGE HEADER -->
     <section class="topSingleBkg topPageBkg">
       <div class="item-content-bkg">
         <div
@@ -204,15 +153,12 @@
         </div>
       </div>
     </section>
-    <!-- /TOP IMAGE HEADER -->
 
-    <!-- MAIN WRAP CONTENT -->
     <section id="wrap-content" class="page-content">
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1">
             <div class="page-holder custom-page-template">
-              <!-- Title and short description for reservation -->
               <div class="categ-name">
                 <h2>Haz una reserva</h2>
               </div>
@@ -222,7 +168,6 @@
               </p>
             </div>
 
-            <!-- Reservation iFrame from CoverManager -->
             <script
               type="text/javascript"
               src="https://www.covermanager.com/js/iframeResizer.min.js"
@@ -237,20 +182,13 @@
               onload="iFrameResize();"
             ></iframe>
           </div>
-          <!-- /col-md-10 -->
         </div>
-        <!-- /row -->
       </div>
-      <!-- /container -->
     </section>
-    <!-- /MAIN WRAP CONTENT -->
 
-    <!-- FOOTER -->
     <footer>
       <div class="container">
-        <!-- FOOTER ROW -->
         <div class="row alignc">
-          <!-- FOOTER COLUMN 1 (Address) -->
           <div class="col-md-4">
             <div class="footer-content">
               <h5>DIRECCIÓN:</h5>
@@ -261,7 +199,6 @@
             </div>
           </div>
 
-          <!-- FOOTER COLUMN 2 (Reservation Info) -->
           <div class="col-md-4">
             <div class="footer-content">
               <h5>RESERVA:</h5>
@@ -272,7 +209,6 @@
             </div>
           </div>
 
-          <!-- FOOTER COLUMN 3 (Opening Hours) -->
           <div class="col-md-4">
             <div class="footer-content">
               <h5>HORARIO DE APERTURA:</h5>
@@ -284,9 +220,7 @@
             </div>
           </div>
         </div>
-        <!-- /FOOTER ROW -->
 
-        <!-- FOOTER SOCIAL (Instagram) -->
         <ul class="footer-social">
           <li>
             <a
@@ -297,25 +231,17 @@
             ></a>
           </li>
         </ul>
-        <!-- /FOOTER SOCIAL -->
 
-        <!-- FOOTER COPYRIGHT -->
         <div class="copyright">Copyright &copy; 2022, Sakana.</div>
-        <!-- /FOOTER COPYRIGHT -->
 
-        <!-- FOOTER SCROLL UP (Scroll-to-top button) -->
         <div class="scrollup">
           <a class="scrolltop" href="#">
             <i class="fas fa-chevron-up"></i>
           </a>
         </div>
-        <!-- /FOOTER SCROLL UP -->
       </div>
-      <!-- /container -->
     </footer>
-    <!-- /FOOTER -->
 
-    <!-- JS FILES -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate.min.js"></script>
     <script src="css/bootstrap/js/popper.min.js"></script>
@@ -324,8 +250,6 @@
     <script src="js/jquery.fitvids.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/owl-carousel/owl.carousel.min.js"></script>
-
-    <!-- MAIN JS (Initialization and custom scripts) -->
     <script src="js/init.js"></script>
   </body>
 </html>
