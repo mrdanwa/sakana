@@ -22,43 +22,28 @@
     navText: "",
   });
 
-  //end home slider
+  // end home slider
 
-  //hamburger menu
+  // hamburger menu
   $(".nav-button-holder").on("click", function (e) {
     e.preventDefault();
 
     if ($(this).is(".inactive")) {
       $(this).toggleClass("inactive active");
       $("body").addClass("has-active-menu");
-      $(".nav-button").addClass("active");
+      $(".nav-button").addClass("active").attr("aria-expanded", "true");
       $(".mask-nav-2, #header-2").addClass("is-active");
     } else if ($(this).is(".active")) {
       $(this).toggleClass("inactive active");
       $("body").removeClass("has-active-menu");
-      $(".nav-button").removeClass("active");
+      $(".nav-button").removeClass("active").attr("aria-expanded", "false");
       $(".mask-nav-2, #header-2").removeClass("is-active");
     }
   });
 
   // end hamburger menu
 
-  //sticky menu
-  $(window).on("scroll", function () {
-    if ($(document).scrollTop() > 50) {
-      $(".navbar-1, #header-2, #header-3, #header-4, .header6").addClass(
-        "nav-bkg1"
-      );
-      $(".headerWrap-5").addClass("navbar-fixed-top nav-bkg1");
-    } else {
-      $(".navbar-1, #header-2, #header-3, #header-4, .header6").removeClass(
-        "nav-bkg1"
-      );
-      $(".headerWrap-5").removeClass("navbar-fixed-top nav-bkg1");
-    }
-  });
-
-  //gallery lightbox
+  // gallery lightbox
 
   $(".gallery-post a").magnificPopup({
     type: "image",
@@ -67,14 +52,25 @@
     },
   });
 
-  //scroll up button
+  // sticky nav + scroll-up button (single scroll handler)
+  var $stickyTargets = $(".navbar-1, #header-2, #header-3, #header-4, .header6");
+  var $headerWrap5 = $(".headerWrap-5");
+  var $scrollup = $(".scrollup");
+  $scrollup.hide();
 
-  $(".scrollup").hide();
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 400) {
-      $(".scrollup").fadeIn();
+    var y = $(window).scrollTop();
+    if (y > 50) {
+      $stickyTargets.addClass("nav-bkg1");
+      $headerWrap5.addClass("navbar-fixed-top nav-bkg1");
     } else {
-      $(".scrollup").fadeOut();
+      $stickyTargets.removeClass("nav-bkg1");
+      $headerWrap5.removeClass("navbar-fixed-top nav-bkg1");
+    }
+    if (y > 400) {
+      $scrollup.fadeIn();
+    } else {
+      $scrollup.fadeOut();
     }
   });
 
@@ -86,31 +82,44 @@
 
 // Custom scripts
 
-// Popup promo modal (home page only) — opens on load, closed via the × button.
-const btnCloseModal = document.getElementById("close-modal");
+// Popup promo modal (home page only) — shown on every visit, closed via the ×,
+// a backdrop click, or Escape.
 const modalElm = document.getElementById("modal");
+const btnCloseModal = document.getElementById("close-modal");
 
-if (btnCloseModal && modalElm) {
-  btnCloseModal.addEventListener("click", function () {
+if (modalElm) {
+  const dismissModal = function () {
     modalElm.classList.remove("open");
+  };
+
+  // show on every page open (small delay so it doesn't fight the loader fade)
+  setTimeout(function () {
+    modalElm.classList.add("open");
+  }, 800);
+
+  if (btnCloseModal) btnCloseModal.addEventListener("click", dismissModal);
+  // close on backdrop click
+  modalElm.addEventListener("click", function (e) {
+    if (e.target === modalElm) dismissModal();
+  });
+  // close on Escape
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modalElm.classList.contains("open")) dismissModal();
   });
 }
 
-// Loader script
+// Loader overlay (home page only) — brief anti-FOUC curtain that fades out on
+// load, capped at 1.2s so a slow image never holds the page hostage.
 document.addEventListener("DOMContentLoaded", function () {
   const loaderWrapper = document.querySelector(".loader-wrapper");
-
-  // The loader only exists on the home page.
   if (!loaderWrapper) return;
 
-  // Hide loader after 3.5 seconds, regardless of page load completion
-  const timeoutId = setTimeout(() => {
-    loaderWrapper.style.display = "none";
-  }, 3500);
-
-  // If the page loads before 3.5 seconds, hide it immediately
-  window.onload = function () {
-    clearTimeout(timeoutId);
-    loaderWrapper.style.display = "none";
+  const hide = function () {
+    loaderWrapper.classList.add("is-hidden");
   };
+  const safety = setTimeout(hide, 1200);
+  window.addEventListener("load", function () {
+    clearTimeout(safety);
+    hide();
+  });
 });
